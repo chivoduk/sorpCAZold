@@ -1,0 +1,442 @@
+	<!DOCTYPE html>
+	<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SORP</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<!-- Jquary -->
+		<link href="css/jquery.formstyler.css" rel="stylesheet" />
+		<link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+		
+
+		<!-- Slider in menu -->
+		<link rel="stylesheet" href="css/nouislider.css">
+		
+	</head>
+	<body>
+		<div class="body-overlay"></div>
+
+		<div class="top-line"></div>
+		<div class="container-fluid wrapper">
+			<div class="header">
+				
+				<nav class="secondary-nav">
+		            <div class="row">
+		                <div class="logotype logo col-sm-6 col-xs-12">
+		                    <img src="images/logo.png" alt="logo-sorp">
+		                </div>
+		                <div class="col-sm-6 col-xs-12">
+		                    <ul class="nav-holder">
+		                        <li><a href="#"><img src="images/loupe.png" alt="search-icon"></a></li>
+		                        <li><a href="#"><img src="images/tree.png" alt="sitemap-icon"></a></li>
+		                        <li><a href="#"><img src="images/phone.png" alt="phone-icon"></a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </nav>
+		        <nav class="primary-nav">
+		            <div class="nav-toggler">
+		                <i class="fa fa-bar">
+		                	<span></span>
+		                	<span></span>
+		                	<span></span>
+		                </i>
+		            </div>
+		            <ul class="nav-holder">
+		                <li><a href="#">Банковский счет</a></li>
+		                <li><a href="#">Правовая поддержка</a></li>
+		                <li><a href="#">Профессиональные услуги</a></li>
+		            </ul>
+		        </nav>
+
+			</div>
+
+			<div class="block-info">
+					<div class="row content">
+						<div class="col-xs-12">
+							<h1 class = "chapter1">
+								РЕГИСТРАЦИЯ КОМПАНИЙ <br> 
+								В СВОБОДНЫХ <br>
+								ЭКОНОМИЧЕСКИХ ЗОНАХ <br>
+								ОАЭ
+							</h1>
+
+							<p>Создание первой свободной экономической зоны было настолько успешным с экономической точки зрения проектом для ОАЭ, что эту модель начали широко копировать вслед за Дубаем и другие эмираты.</p>
+
+							<p>На сегодняшний день только в одном Дубае насчитывается более 20 свободных экономических зон, каждая из которых ориентирована на регистрацию компаний определённого вида деятельности. Всего СЭЗ в ОАЭ — более 30.</p>
+						</div>
+					</div>
+					<div class="row description">
+						<div class="col-xs-12">
+							<h2 class = "chapter2">
+								Преимущества регистрации 
+								<br>
+								компании в СЭЗ ОАЭ
+							</h2>
+						</div>
+					
+						<div class="col-xs-12 plus">
+							<ul>
+								<li><img src="images/badge.png" alt="">
+									<p>100% Репатриация
+										выручки и отсутствие 
+										налогообложения 
+									прибыли</p>
+								</li>
+								<li>
+									<img src="images/badge.png" alt="">
+									<p>100% Владение 
+										компанией
+									</p>
+								</li>
+								<li>
+									<img src="images/badge.png" alt="">
+									<p>100% Отсутствие
+										импортных и экспортных 
+										пошлин
+									</p>
+								</li>
+								<li>
+									<img src="images/badge.png" alt="">
+									<p>Резидентские визы 
+										и вид на жительство 
+										для учредителей и 
+										персонала компании
+									</p>
+								</li>
+								<li>
+									<img src="images/badge.png" alt="">
+									<p>Полноценное
+										использование 
+										банковских услуг 
+										и сервисов
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+
+			<div class="row filter">
+				<div class="col-xs-12 col-sm-6">
+					<div id="block-maps">
+						<div id="map"></div>
+						<div id="select">
+							<div class="list" onclick="select(this)">
+								<span>Типы лицензии</span>
+
+								<ul>
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="commercial"> 
+										Коммерческая
+									</li>
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="professional">	
+										Профессиональная
+									</li>	
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="tourist">
+										Туристическая
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="investment">
+										Инвестиционная
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="production">
+										Производственная
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="educational">
+										Образовательная
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="insurance">
+										Страховая
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="financial">
+										Финансовая
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="freelance_license">
+										Фриланс лицензия
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list1" id="other">
+										Другое
+									</li>
+								</ul>
+								
+							</div>
+
+
+
+							<div class="list" id="field_of_activity" onclick="select(this)">
+								<span>Сфера деятельности</span>
+
+								<ul>
+
+									<!-- Всставка при помощи скрипта -->
+
+								</ul>
+							</div>
+
+
+
+
+							<div class="list" onclick="select(this)">
+								<span>Эмират</span>
+
+								<ul>
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="aby-dabi">
+										Абу-Даби
+									</li>
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="abjman">	
+										Аджман
+									</li>	
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="dubai">
+										Дубай
+									</li>
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="fujeira">
+										Фуджейра
+									</li>
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="ras-al-haima">
+										Рас-Эль-Хайма
+									</li>
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="um-al-cuvain">
+										Ум-аль-кувейн
+									</li>
+
+
+									<li onclick="showChecked(this)">
+										<input type="radio" name="list3" id="sharja">
+										Шарджа
+									</li>
+								</ul>
+							</div>
+
+							<div>
+								<span>
+									<div class="wrap-slider">
+										<div id="slider-handles">
+										</div>
+									</div>
+									<div id="left-title-slider">0</div>
+									<div id="right-title-slider">100</div>
+								</span>
+							</div>
+						</div>				
+					</div>
+					<div class="under-maps">
+
+						<!-- Каждый блок заполняется в ручную и должен содержать те же классы.
+						А id блока должен увеличиваться на '1'. И должен соответствовать порядковому номеру внутреннего массива в скрипте map.js. Короткое описание блоков в массиве скрипта show_text_block.js -->
+
+						<div class="blocks-none" id = "text-block-1">
+							<p class="disp-none">СЭЗ: Дубайский аэропорт</p>
+							<p class="disp-none">Кроме 100-процентной репатриации прибыли, полной собственности и 
+								освобождения от всех налогов, СЭЗ в Международном аэропорту Дубая 
+								предлагает компаниям современную материально-техническую базу, 
+								имеющую стратегическое расположение рядом с аэропортом, современную
+								инфраструктуру, круглосуточное таможенное обслуживание, ускоренную 
+								таможенную очистку и специализированный логистический центр.
+								Администрация СЭЗ Международного аэропорта Дубая (DAFZA) является
+								руководящим органом, который осуществляет импортные и экспортные 
+								операции и выдачу лицензий и виз. 
+							</p>
+						</div>
+
+						<div class="blocks-none" id = "text-block-2">
+							<p class="disp-none">СЭЗ: Дубайский аэропорт</p>
+							<p class="disp-none">Блок 2</p>
+						</div>
+
+						<div class="blocks-none" id = "text-block-3">
+							<p class="disp-none">СЭЗ: Дубайский аэропорт</p>
+							<p class="disp-none">Блок 3</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div id="wrap_filt-blocks">
+						<div id="filt-blocks">
+							<!-- js скрипт create_info_blocks.js вставит блоки из массива в скрипте map.js -->
+						</div>
+					</div>
+
+					<div class="row scrol-btn">
+						<div class="col-xs-12">
+							<a onclick = "scrol(this)"><img src="images/scrol-btn.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 content-bottom">
+					<h2 class = "chapter2">Основные организационно-правовые формы</h2>
+					<p>Для компаний, регистрируемых в свободных экономических зонах ОАЭ, существуют три основных формы собственности:</p>
+					<p><span>Foreign Branch </span>&#8212; филиал иностранной компании;</p>
+					<p><span>Free Zone Establishment (FZE) </span>&#8212; один учредитель;</p>
+					<p><span>Free Zone Company (FZCO) </span>&#8212; от 2 до 5 учредителей</p>
+					<p>В отличие от филиала иностранной компании FZE и FZCO компании являются самостоятельными юридическими лицами. Они представляют собой своего рода общества с ограниченной ответственностью.<br>
+						Учредителями в таких компаниях могут быть как физические, так и юридические лица любой резидентности кроме Израиля. Величина минимального уставного капитала зависит от вида деятельности (типа лицензии), а так же формы компании и может dарьироваться от 50 000 дирхамов (как например в Dubai Multi 
+					Commodities Centre (DMCC)) до 1 000 000 дирхамов (например в Jebel Ali Free Zone (JAFZ)). В отдельных случаях в ряде СЭЗ в ОАЭ уставной капитал незначителен или имеет возможность отсрочки его внесения. </p>
+					<p>Все вышеназванные формы компаний дают право на оформление 3-х летней резидентской визы для инвестора, работников компании и членов их семей.</p>
+				</div>
+			</div>
+
+			<div class="row call">
+				<div class="col-xs-12">
+					<p>Вы всегда можете получить бесплатную консультацию по интересующим вопросам</p>
+					<span><a href="#">Связаться</a></span>
+				</div>
+			</div>
+
+			<div class="row new">
+					<div class="col-xs-12">
+						<h2 class = "chapter2">ИНФОЦЕНТР</h2>
+					</div>
+				
+				<!-- <div class="row"> -->
+					<div class="col-sm-6 col-md-3">
+						<a href="" class="titt">СНЕГ ДЛЯ ЭСКИМОСОВ: САМАЯ НЕВЕРОЯТН...</a>
+						<a href="" class="cont">Казалось бы, чего в пустыне может быть больше, чем песка Даже поголовье верблюдов и запасы нефти не столь внушительны, как тонны дюн и...</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="" class="titt">ЭКСПОРТ РОССИЙСКОЙ ФАРМАЦЕВТИЧЕСКОЙ...</a>
+						<a href="" class="cont">Мировой рынок фармацевтики пребывает в противоречивом состоянии В течение последних 5 лет он стремительно расширяется и растет (3-5%...</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="" class="titt">СНЕГ ДЛЯ ЭСКИМОСОВ: САМАЯ НЕВЕРОЯТН...</a>
+						<a href="" class="cont">Казалось бы, чего в пустыне может быть больше, чем песка Даже поголовье верблюдов и запасы нефти не столь внушительны, как тонны дюн и...</a>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<a href="" class="titt">ЭКСПОРТ РОССИЙСКОЙ ФАРМАЦЕВТИЧЕСКОЙ...</a>
+						<a href="" class="cont">Мировой рынок фармацевтики пребывает в противоречивом состоянии В течение последних 5 лет он стремительно расширяется и растет (3-5%...</a>
+					</div>
+
+				<!-- </div> -->
+			</div>
+
+			<div class="row crumbs">
+				<div class="col-xs-12">
+					<ul>                             
+						<li><a href="">#бизнес</a></li>
+						<li><a href="">#закрепить</a></li>
+						<li><a href="">#компания</a></li>
+						<li><a href="">#лицензия</a></li>
+						<li><a href="">#налог</a></li>
+						<li><a href="">#производство</a></li>
+						<li><a href="">#резидент</a></li>
+						<li><a href="">#экономика</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid footer-maps">
+			<div class="row">
+				<div class="col-with-map col-md-12 col-xs-12">
+					<div id="map2"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="footer-logo container-fluid">
+
+
+			<div class="logo">
+
+				<nav class="footer_nav secondary-nav">
+		            <div class="row">
+		                <div class="logotype logo col-md-3 col-xs-12">
+		                    <img src="images/footer-logo.png" alt="logo-sorp">
+		                    <p class="copy">Все права защишены © SORP.AE 2007-2016</p>
+		                </div>
+
+		                <div class="footer_number col-md-3 col-md-offset-1 col-xs-12">
+							<a href="tel:+97144533811">
+								<span>
+									+971 4 453 38 11
+								</span>
+							</a>
+							<a href="tel:+971 45594559">
+								<span>
+									+971 4 559 4 559
+								</span>
+							</a>
+						</div>
+
+		                <div class="block_nav-holder col-md-5 col-xs-12">
+		                    <ul class="nav-holder">
+		                        <li><a href="#"><img src="images/footer-loupe.png" alt="search-icon"></a></li>
+		                        <li><a href="#"><img src="images/footer-tree.png" alt="sitemap-icon"></a></li>
+		                        <li><a href="#"><img src="images/footer-phone.png" alt="phone-icon"></a></li>
+		                    </ul>
+		                </div>
+		            </div>
+		        </nav>
+
+				
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+	
+	<script src="js/nouislider.js"></script>
+	<script src="js/jquery.formstyler.min.js"></script>
+
+	<!-- Слайдер в меню -->
+	<script src="js/sliderInMenu.js"></script>
+
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtclfIF-ggJ4r8OpyNu-jeA2_nryHauTA&callback=initMap">
+	</script>
+	</body>
+	</html>
